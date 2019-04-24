@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: PJBgLJug0UnL3myy2c8IPECMKPE3wraH3rYHR2IC/V04ac0/bVtaQZdEGyhhhkMqtWRDhgj7GZBoLIKVk6uDQ+ILwcqsmjnNs4N+ijIWlDHMhKpMrgS0xYkikOeVLGK+g4VqoZK91vAc9RFaKxYqXFiha1FGG+523NGHDTlO1lK5LVPibTMF7WayXaGdYJIrS6YQqi7aZJyG7O4JNMGYEb7zFtYkFL2Il9ge1f+Hv7RXrjThy4xE0bzCzV8woatsjVr2T+208+EdZjZPZSKgNyS1GZk7msq0ridk87l43DPB7EoaskDKcg4L0bA3T47LPeWw30sYRJ1Bj2uOpeVDQaoUu1pqmR9dQPhIOaTh3dUG9IigOq37tl8KOTiJwe/7S2hBD9xMfxW6k7Fbqb8vrN7SrbOs2XVNmCEX+srXL4KyWcG0Iv5T3eKoJjRCKL7BOpD8DvNwEh/KTQsS/4jUbM1H90upwR7NSH8u80N/DVqKmVUoycbpfC5edrlEILrafQVNwzIFnR4GLlFV0hUPyAXpYlk4gWnS/Ov7udE3z/hmkXJYZD/HQhyzBFEgyB+l8Bl6mdJ4ZmmguIZwRM8L480YlpRN1xJ0Pn3ZuDr8yA6nGFGs3O/xwdJW8xMWE+jSAc8ZSVZ6+Mi4LGs0QBnR3CUuNpg4+xGkw1XGtcj3cvg=
+  app: evening-castle-79297
+  on:
+    repo: allyjfuller/menew-client
