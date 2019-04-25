@@ -1,8 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import MenuItemPage from './menu-item-page';
+import { BrowserRouter as Router } from "react-router-dom"
 import {fetchProtectedData} from '../actions/protected-data';
 import './dashboard.css';
 
@@ -15,9 +14,6 @@ export class Dashboard extends React.Component {
         return (
             <Router>
                 <div className="dashboard">
-                
-                <button><Link to="/menu-item-page" className="menu-item-page"> + </Link></button>
-                <Route exact path="/menu-item-page" component={ MenuItemPage } />
 
                 </div>
             </Router>
