@@ -21,6 +21,8 @@ export default class Cuisine extends React.Component {
   render() {
     return (
       <div onSubmit={this.handleSubmit}>
+        Cuisine:
+        <br />
           <select value={this.state.value} onChange={this.handleChange}>
             <option defaultValue="select one">select one</option>
             <option value="american">American</option>

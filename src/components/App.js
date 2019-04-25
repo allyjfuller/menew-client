@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import HeaderBar from './header-bar';
-import TopNav from './top-nav';
 import Dashboard from './dashboard';
 import { refreshAuthToken } from '../actions/auth';
 
@@ -40,7 +39,7 @@ export class App extends React.Component {
         return (
             <div className="app">
                 <HeaderBar />
-                <TopNav />
+                
                 <Dashboard />
             </div>
         );
