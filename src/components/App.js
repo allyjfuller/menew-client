@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import HeaderBar from './header-bar';
-//import Dashboard from './dashboard';
+import AddItem from './add-item';
+import ItemList from './item-list';
 import { refreshAuthToken } from '../actions/auth';
 
 export class App extends React.Component {
@@ -39,6 +40,8 @@ export class App extends React.Component {
         return (
             <div className="app">
                 <HeaderBar />
+                <AddItem />
+                <ItemList />
             </div>
         );
     }

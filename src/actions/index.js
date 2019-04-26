@@ -1,5 +1,13 @@
-const DUMMY_ACTION = 'DUMMY_ACTION'
+const ADD_ITEM = 'ADD_ITEM'
+export const addItem = (text) => ({
+	type: ADD_ITEM,
+	text,
+	id: Math.random()
 
-export const dummyAction = () => ({
-	type: DUMMY_ACTION
+})
+
+const DELETE_ITEM = 'DELETE_ITEM'
+export const deleteItem = (id) => ({
+	type: DELETE_ITEM,
+	id
 })
