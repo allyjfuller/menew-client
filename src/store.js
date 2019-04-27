@@ -4,9 +4,9 @@ import thunk from 'redux-thunk';
 import { loadAuthToken } from './local-storage'
 import authReducer from './reducers/auth'
 import protectedDataReducer from './reducers/protected-data'
-import items from './reducers/items'
+import items from './reducers/items';
+import searchItems from './reducers/search-items';
 import { setAuthToken, refreshAuthToken } from './actions/auth'
-//import rootReducer from './reducers'
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -15,7 +15,9 @@ export const store = createStore(
         form: formReducer,
         auth: authReducer,
         protectedData: protectedDataReducer,
-        items: items
+        items: items,
+        searchItems: searchItems
+
     }),
   composeEnhancer(applyMiddleware(thunk)),
 );
