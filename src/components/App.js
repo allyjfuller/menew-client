@@ -10,7 +10,7 @@ import { refreshAuthToken } from '../actions/auth';
 export class App extends React.Component {
     componentDidUpdate(prevProps) {
         if (!prevProps.loggedIn && this.props.loggedIn) {
-            // When we are logged in, refresh the auth token periodically
+            https://docs.google.com/presentation/d/1prIN89ipWozVVtmuTC_9-zlDwkoP8RLSuj5OdPOaJTs/edit?usp=sharing
             this.startPeriodicRefresh();
         } else if (prevProps.loggedIn && !this.props.loggedIn) {
             // Stop refreshing when we log out
@@ -37,14 +37,18 @@ export class App extends React.Component {
         clearInterval(this.refreshInterval);
     }
 
+// move this logic into dashboard
     render() {
-        return (
-            <div className="app">
+            return (
+                this.props.loggedIn ?
+            <div className="app" >
                 <HeaderBar />
                 <AddItem />
                 <ItemList />
             </div>
-        );
+
+            : null
+        )
     }
 }
 

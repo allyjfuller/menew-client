@@ -16,15 +16,14 @@ const receiveItems = (items) => ({
 */
 
 export const saveItem = (text) => {
+	console.log(text);
 	return dispatch => {
 		fetch(`${API_BASE_URL}/item/`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			body: JSON.stringify({
-				text,
-			})
+			body: JSON.stringify(text)
 		})
 		.then(response => response.json())
 		.then(json => console.log(json))

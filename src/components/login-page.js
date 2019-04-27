@@ -13,10 +13,10 @@ export function LoginPage(props) {
     }
     return (
         <div>
-            <Modal>
+
             <h2>Login</h2>
             <LoginForm />
-            </Modal>
+
         </div>
     );
 }
