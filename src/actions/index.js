@@ -1,13 +1,5 @@
-//import { search } from '../menu-items' 
-
-const ADD_ITEM = 'ADD_ITEM'
-export const addItem = (text) => ({
-	type: ADD_ITEM,
-	text,
-	id: Math.random()
-
-})
-
+import {API_BASE_URL} from '../config';
+//import search from './items.js';
 
 const DELETE_ITEM = 'DELETE_ITEM'
 export const deleteItem = (id) => ({
@@ -15,19 +7,17 @@ export const deleteItem = (id) => ({
 	id
 })
 
-/*
-ASYNC ACTIONS - Save Items
 
-const RECEIVE_ITEMS = 'RECEIVE_ITEMS'
+/*const RECEIVE_ITEMS = 'RECEIVE_ITEMS'
 const receiveItems = (items) => ({
 	type: RECEIVE_ITEMS,
 	items
 })
-
+*/
 
 export const saveItem = (text) => {
 	return dispatch => {
-		fetch('http://localhost:8080/api', {
+		fetch(`${API_BASE_URL}/item/`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -37,13 +27,11 @@ export const saveItem = (text) => {
 			})
 		})
 		.then(response => response.json())
-		.then(json => dispatch(receiveItems(json)))
+		.then(json => console.log(json))
 		.catch(err => console.log(err))
 	}
 }
-
-ASYNC ACTION - Search Items
-
+/*
 export const SEARCH_ITEMS_REQUEST = 'SEARCH_ITEMS_REQUEST';
 export const searchItemsRequest = () => ({
 	type: SEARCH_ITEMS_REQUEST
@@ -66,5 +54,30 @@ export const searchItems = name => dispatch => {
     search(name)
         .then(items => dispatch(searchItemsSuccess(items)))
         .catch(error => dispatch(searchItemsError(error)));
+};
+
+/*
+export const SEARCH_USERS_REQUEST = 'SEARCH_USERS_REQUEST';
+export const searchUsersRequest = () => ({
+	type: SEARCH_USERS_REQUEST
+});
+
+export const SEARCH_USERS_SUCCESS = 'SEARCH_USERS_SUCCESS';
+export const searchUsersSuccess = items => ({
+    type: SEARCH_USERS_SUCCESS,
+    items
+});
+
+export const SEARCH_USERS_ERROR = 'SEARCH_USERS_ERROR';
+export const searchUsersError = error => ({
+    type: SEARCH_USERS_ERROR,
+    error
+});
+
+export const searchUsers = establishmentName => dispatch => {
+    dispatch(searchUsersRequest());
+    search(establishmentName)
+        .then(items => dispatch(searchUsersSuccess(Users)))
+        .catch(error => dispatch(searchUsersError(error)));
 };
 */

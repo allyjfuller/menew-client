@@ -4,14 +4,11 @@ const initialState = {
 
 const items = (state = initialState, action) => {
 	switch(action.type) {
-		case 'ADD_ITEM':
+		case 'RECEIVE_ITEMS':
 
 		return {
 			...state,
-			data: [...state.data, {
-				id: action.id,
-				text: action.text
-			}]
+			data: action.items
 			
 		}
 

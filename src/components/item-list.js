@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { deleteItem } from '../actions/index'
 
 const ItemList = (props) => (
+	<div>
 		<ul>
 		{props.items.map((item, index) => (
 			<li key={index}>
@@ -11,8 +12,8 @@ const ItemList = (props) => (
 			</li>
 			))}
 		</ul>
-
-	)
+	</div>
+)
 
 const mapStateToProps = (state) => ({
 	items: state.items.data

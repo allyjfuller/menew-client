@@ -1,7 +1,8 @@
+/*
 import React from 'react';
 import { connect } from 'react-redux';
 import Spinner from 'react-spinkit';
-import { searchItems } from './actions/index';
+import { searchItems } from '../actions/index';
 
 export class SearchItem extends React.Component {
 	renderResults() {
@@ -46,4 +47,5 @@ const mapStateToProps = state => ({
 	error: state.error
 });
 
-export default connect(mapStateToProps)(SearchItems);
+export default connect(mapStateToProps)(SearchItem);
+*/

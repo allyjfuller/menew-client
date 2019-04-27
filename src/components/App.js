@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import HeaderBar from './header-bar';
 import AddItem from './add-item';
 import ItemList from './item-list';
+//import SearchItem from './search-item';
 import { refreshAuthToken } from '../actions/auth';
 
 export class App extends React.Component {

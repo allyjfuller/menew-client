@@ -1,13 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addItem } from '../actions/index';
+import { saveItem } from '../actions/index';
 
 const AddItem = (props) => (
 	<form onSubmit={(event) => {
 		event.preventDefault()
 
 		let input = event.target.userInput.value
-		props.dispatch(addItem(input))
+		props.dispatch(saveItem(input))
+		
 		event.target.userInput.value = ''
 	}}>
 				<label>
