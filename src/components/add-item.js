@@ -1,12 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { saveItem } from '../actions/index';
+import { addItem } from '../actions/index';
+//import { saveItem } from '../actions/index';
 import { withRouter } from 'react-router-dom';
 
 class AddItem extends React.Component {
-	constructor(props) {
-	super(props)}
-
 	render() {
 		console.log(this.props);
 		return(
@@ -21,7 +19,7 @@ class AddItem extends React.Component {
 			userEmail: this.props.currentUser.email
 		}
 
-		this.props.dispatch(saveItem(input))
+		this.props.dispatch(addItem(input))
 		
 		event.target.itemName.value = ''
 		event.target.itemPrice.value = ''

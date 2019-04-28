@@ -10,7 +10,6 @@ import { refreshAuthToken } from '../actions/auth';
 export class App extends React.Component {
     componentDidUpdate(prevProps) {
         if (!prevProps.loggedIn && this.props.loggedIn) {
-            https://docs.google.com/presentation/d/1prIN89ipWozVVtmuTC_9-zlDwkoP8RLSuj5OdPOaJTs/edit?usp=sharing
             this.startPeriodicRefresh();
         } else if (prevProps.loggedIn && !this.props.loggedIn) {
             // Stop refreshing when we log out

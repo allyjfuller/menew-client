@@ -3,16 +3,23 @@ import { connect } from 'react-redux'
 import { deleteItem } from '../actions/index'
 
 const ItemList = (props) => (
-	<div>
-		<ul>
+		<div>
+			<ul>
 		{props.items.map((item, index) => (
 			<li key={index}>
-				<span>{item.text}</span>
-				<button onClick={() => props.dispatch(deleteItem(item.id))}>Delete</button>
+			<span>
+			{item.input.name}
+			<br />
+			{item.input.price}
+			<br />
+			{item.input.description}
+			</span>
+			<br />
+			<button onClick={() => props.dispatch(deleteItem(item.id))}>Delete</button>
 			</li>
 			))}
-		</ul>
-	</div>
+			</ul>
+		</div>
 )
 
 const mapStateToProps = (state) => ({

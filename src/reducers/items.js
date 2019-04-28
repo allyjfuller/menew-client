@@ -4,12 +4,13 @@ const initialState = {
 
 const items = (state = initialState, action) => {
 	switch(action.type) {
-		case 'RECEIVE_ITEMS':
+		case 'ADD_ITEM':
 
 		return {
 			...state,
-			data: action.items
-			
+			data: [...state.data, {
+				input: action.input
+			}]	
 		}
 
 		case 'DELETE_ITEM':
