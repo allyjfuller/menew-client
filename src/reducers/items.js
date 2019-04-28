@@ -9,6 +9,7 @@ const items = (state = initialState, action) => {
 		return {
 			...state,
 			data: [...state.data, {
+				id: action.id,
 				input: action.input
 			}]	
 		}
