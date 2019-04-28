@@ -3,6 +3,7 @@ import {API_BASE_URL} from '../config';
 const ADD_ITEM = 'ADD_ITEM'
 export const addItem = (input) => ({
 	type: ADD_ITEM,
+	id: Math.random(),
 	input
 })
 

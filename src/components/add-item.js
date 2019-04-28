@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { addItem } from '../actions/index';
 //import { saveItem } from '../actions/index';
 import { withRouter } from 'react-router-dom';
+import {required, nonEmpty} from '../validators.js';
+
 
 class AddItem extends React.Component {
 	render() {
@@ -28,13 +30,13 @@ class AddItem extends React.Component {
 				<label>
 					Item Name:
 					<br />
-					<input type="text" name="itemName" />
+					<input type="text" name="itemName" validate={[required, nonEmpty]} />
 				</label>
 				<br />
 				<label>
 					Price:
 					<br />
-					<input type="text" name="itemPrice" />
+					<input type="text" name="itemPrice" validate={[required, nonEmpty]} />
 				</label>
 				<br />
 				
@@ -42,7 +44,7 @@ class AddItem extends React.Component {
 				<label>
 				Description:
 					<br />
-					<textarea type="text" name="itemDescription"/>
+					<textarea type="text" name="itemDescription" validate={[required, nonEmpty]} />
 				</label>
 				<br />
 				<button>Submit</button>

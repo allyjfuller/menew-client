@@ -29,7 +29,6 @@ export class RegistrationForm extends React.Component {
                 <Field component={Checkbox} type="checkbox" name="establishmentType" />
                 <label htmlFor="establishmentName">Name of establishment</label>
                 <Field component={Input} type="text" name="establishmentName" />
-                <label htmlFor="cuisine">Cuisine</label>
                 <Field component={Cuisine} type="select" name="cuisine" />
                 <label htmlFor="email">Email</label>
                 <Field
