@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import HeaderBar from './header-bar';
 import AddItem from './add-item';
-import ItemList from './item-list';
 //import SearchItem from './search-item';
 import { refreshAuthToken } from '../actions/auth';
+import Dashboard from './dashboard';
 
 export class App extends React.Component {
     componentDidUpdate(prevProps) {
@@ -43,7 +43,7 @@ export class App extends React.Component {
             <div className="app" >
                 <HeaderBar />
                 <AddItem />
-                <ItemList />
+                <Dashboard />
             </div>
 
             : null

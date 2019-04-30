@@ -4,8 +4,8 @@ export default class Checkbox extends React.Component {
     constructor(props) {
     super(props);
     this.state = {
-      bar: null,
-      restaurant: null
+      bar: false,
+      restaurant: false
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -35,6 +35,7 @@ export default class Checkbox extends React.Component {
                     name="bar"
                     type="checkbox"
                     checked={this.state.bar}
+                    value={this.state.bar} 
                     onChange={this.handleInputChange} />
                 </label>
         
@@ -44,6 +45,7 @@ export default class Checkbox extends React.Component {
                     name="restaurant"
                     type="checkbox"
                     checked={this.state.restaurant}
+                    value={this.state.restaurant}
                     onChange={this.handleInputChange} />
                 </label>
             </div>

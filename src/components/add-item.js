@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addItem } from '../actions/index';
-//import { saveItem } from '../actions/index';
+//import { addItem } from '../actions/index';
+import { saveItem } from '../actions/index';
 import { withRouter } from 'react-router-dom';
 import {required, nonEmpty} from '../validators.js';
 
@@ -21,7 +21,7 @@ class AddItem extends React.Component {
 			userEmail: this.props.currentUser.email
 		}
 
-		this.props.dispatch(addItem(input))
+		this.props.dispatch(saveItem(input))
 		
 		event.target.itemName.value = ''
 		event.target.itemPrice.value = ''

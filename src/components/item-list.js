@@ -1,29 +1,30 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { deleteItem } from '../actions/index'
+import { connect } from 'react-redux'
 
-const ItemList = (props) => (
-		<div>
+const ItemList = (props) => {
+	console.log(props)
+return (
+	<div>
 			<ul>
-		{props.items.map((item, index) => (
+		{props.items && props.items.map((item, index) => (
 			<li key={index}>
 			<span>
-			{item.input.name}
+			{item.name}
 			<br />
-			{item.input.price}
+			{item.price}
 			<br />
-			{item.input.description}
+			{item.description}
 			</span>
 			<br />
-			<button onClick={() => props.dispatch(deleteItem(item.id))}>Delete</button>
+			<button onClick={() => props.dispatch(deleteItem(item._id))}>Delete</button>
 			</li>
 			))}
 			</ul>
 		</div>
-)
+	)
+}
 
-const mapStateToProps = (state) => ({
-	items: state.items.data
-})
 
-export default connect(mapStateToProps)(ItemList)
+
+export default connect()(ItemList)
