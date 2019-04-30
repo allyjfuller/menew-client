@@ -24,9 +24,11 @@ export class Dashboard extends React.Component {
     }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = state => { 
+    console.log(state)
+    return {
     items: state.protectedData.data
-        
-});
+    }
+};
 
 export default requiresLogin()(connect(mapStateToProps)(Dashboard));

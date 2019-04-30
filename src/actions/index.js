@@ -1,21 +1,19 @@
 import {API_BASE_URL} from '../config';
 
-/*const ADD_ITEM = 'ADD_ITEM'
-export const addItem = (input) => ({
-	type: ADD_ITEM,
-	id: Math.random(),
-	input
-})*/
-
-const DELETE_ITEM = 'DELETE_ITEM'
-export const deleteAnItem = (id) => ({
+export const DELETE_ITEM = 'DELETE_ITEM'
+ const deleteAnItem = (id) => ({
 	type: DELETE_ITEM,
 	id
 })
 
+export const ADD_ITEM = 'ADD_ITEM'
+export const addAnItem = (input) => ({
+	type: ADD_ITEM,
+	input
+})
 
-const RECEIVE_ITEMS = 'RECEIVE_ITEMS'
-const receiveItems = (items) => ({
+export const RECEIVE_ITEMS = 'RECEIVE_ITEMS'
+ const receiveItems = (items) => ({
 	type: RECEIVE_ITEMS,
 	items
 })
@@ -31,7 +29,7 @@ export const saveItem = (item) => {
 			body: JSON.stringify(item)
 		})
 		.then(response => response.json())
-		.then(json => dispatch(receiveItems(json)))
+		.then(json => dispatch(addAnItem(json)))
 		.catch(err => console.log(err))
 	}
 }

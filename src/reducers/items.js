@@ -11,11 +11,11 @@ const items = (state = initialState, action) => {
 		}
 
 		case 'DELETE_ITEM':
-		console.log(action)
-		const items = state.data.filter(item => item.id !== action.id)
+		const data = state.data.filter(item => item._id !== action.id)
+		console.log(data)
 			return {
 				...state,
-				data: items
+				data: data
 			}
 
 		default:
