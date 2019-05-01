@@ -11,6 +11,7 @@
     "mongoose": "^5.5.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-activity-feed": "^0.9.8",
     "react-awesome-modal": "^2.0.5",
     "react-dom": "^16.8.6",
     "react-modal": "^3.8.1",
