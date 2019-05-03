@@ -28,7 +28,8 @@ export default class Checkbox extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="checkboxes">
+            <div className="bar">
                 <label>
                 Bar
                     <input
@@ -38,7 +39,8 @@ export default class Checkbox extends React.Component {
                     value={this.state.bar} 
                     onChange={this.handleInputChange} />
                 </label>
-        
+            </div>
+            <div className="restaurant">
                 <label>
                 Restaurant
                     <input
@@ -49,6 +51,7 @@ export default class Checkbox extends React.Component {
                     onChange={this.handleInputChange} />
                 </label>
             </div>
+        </div>
         );
     }
 }

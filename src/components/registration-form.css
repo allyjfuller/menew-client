@@ -1,0 +1,80 @@
+
+form.registration-form {
+	width: 100%;
+}
+div.container-1, 
+div.container-2 {
+	display: inline-block;
+	width: 50%;
+	height: 150px;
+}
+
+div.reg-buttons {
+	text-align: center;
+}
+
+button.reg-button {
+	width: 30%;
+	font-family: 'Muli', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 8px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: rgba( 225, 225, 225, 0.25);
+}
+
+a {
+	color: #fff;
+}
+
+input#passwordConfirm,
+input#establishmentName {
+	background-color: #000;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	width: 90%;
+	margin-bottom: 10px;
+	padding: 5px 2px;
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
+}
+
+div.bar,
+div.restaurant {
+	margin-right: 10px;
+	padding: 2px 2px;
+}
+
+select {
+	background-color: #000;
+	color: #fff;
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px 2px;
+
+}
+
+p {
+	padding-top: 5px;
+	padding-bottom: 0px;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

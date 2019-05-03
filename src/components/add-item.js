@@ -84,13 +84,13 @@ class AddItem extends React.Component {
 					Item Name:
 				</label>
 					<br />
-					<input type="text" name="itemName" validate={[required, nonEmpty]} />
+					<input type="text" name="itemName" className="add-item-form" validate={[required, nonEmpty]} />
 				<br />
 				<label>
 					Price:
 				</label>
 					<br />
-					<input type="text" name="itemPrice" validate={[required, nonEmpty]} />
+					<input type="text" name="itemPrice" className="add-item-form" validate={[required, nonEmpty]} />
 				<br />
 				<br />
 				<label>
