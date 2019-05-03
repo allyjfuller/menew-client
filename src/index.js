@@ -7,6 +7,7 @@ import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import store from './store'
 import './index.css';
+import ItemPost from './components/item-feed/item-post';
 
 ReactDOM.render(
 
@@ -16,6 +17,7 @@ ReactDOM.render(
 		<Router>
 			<TopNav />
 			<App />
+			<ItemPost />
 		</Router>
 	
 	</Provider>, 
