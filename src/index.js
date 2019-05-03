@@ -16,7 +16,6 @@ ReactDOM.render(
 		<Router>
 			<TopNav />
 			<App />
-
 		</Router>
 	
 	</Provider>, 

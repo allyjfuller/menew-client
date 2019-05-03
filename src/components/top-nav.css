@@ -18,7 +18,7 @@ ul {
 li {
 
 	display: inline-block;
-	border-right: 1px solid #fff;
+	
 }
 
 .about, .login, .register, .contact {
@@ -33,9 +33,14 @@ li {
 
 }
 
+.contact {
+	border-right: none;
+}
+
 li:last-child {
 
 	border-right: none;
+	
 }
 
 li a:hover {

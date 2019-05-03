@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import LoginPage from './login-page'
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { clearAuth } from '../actions/auth';
 import { clearAuthToken } from '../local-storage';
+import './log-out.css';
 
 
-export class HeaderBar extends React.Component {
+export class LogOut extends React.Component {
     logOut() {
         this.props.dispatch(clearAuth());
         clearAuthToken();
@@ -17,13 +17,12 @@ export class HeaderBar extends React.Component {
         let logOutButton;
         if (this.props.loggedIn) {
             logOutButton = (
-                <button onClick={() => this.logOut()}>Log Out</button>
+                <button className="log-out" onClick={() => this.logOut()}>LOG OUT</button>
             );
         }
         return (
-            <div className="header-bar">
+            <div>
                 <Link to="/login">{logOutButton}</Link>
-            <Route path="/login" component={ LoginPage } />
             </div>
         );
     }
@@ -33,4 +32,4 @@ const mapStateToProps = state => ({
     loggedIn: state.auth.currentUser !== null
 });
 
-export default connect(mapStateToProps)(HeaderBar);
+export default connect(mapStateToProps)(LogOut);

@@ -4,12 +4,25 @@ import LandingPage from './landing-page';
 import RegistrationPage from './registration-page';
 import About from './about';
 import Contact from './contact';
+import LogOut from './log-out';
 import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import logoWhite from './img/logoWhite.png';
 import './top-nav.css';
 
-export function TopNav(props) {
+export class TopNav extends React.Component {
+	constructor(props) {
+		super()
+		this.state={};
+	}
+	
+render() {
+	// Only render login button if we are logged out
+	let logInButton;
+	if (this.props.loggedOut) {
+		logInButton = (<button onClick={() => this.logIn()}>LOG IN</button>);
+		
+	}
 	return (
 
 <Router>
@@ -20,13 +33,16 @@ export function TopNav(props) {
 				<Link to="/about" className="about">WHO WE ARE</Link>
 				</li>
 				<li>
-				<Link to="/login" className="login">LOGIN</Link>
+				<Link to="/login">{logInButton}</Link>
 				</li>
 				<li>
 				<Link to="/register" className="register">REGISTER</Link>
 				</li>
 				<li>
 				<Link to="/contact" className="contact">CONTACT</Link>
+				</li>
+				<li>
+				<LogOut />
 				</li>
 			</ul>
 		</nav>
@@ -39,6 +55,7 @@ export function TopNav(props) {
 
 
 		);
+	}
 }
 
 const mapStateToProps = state => ({

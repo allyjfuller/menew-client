@@ -27,12 +27,39 @@ class AddItem extends React.Component {
     	this.setState({ showModal: false });
   	}
 
-
+  	componentWillMount() {
+    ReactModal.setAppElement('body');
+}
 	render() {
 		return(
 		<div>
-		<button onClick={this.handleOpenModal}>Add Item</button>
-		<ReactModal isOpen={this.state.showModal}>
+		<button onClick={this.handleOpenModal} className="add-item">ADD ITEM</button>
+		<ReactModal 
+			isOpen={this.state.showModal}
+			style={{
+    			overlay: {
+      			position: 'fixed',
+      			top: 0,
+      			left: 0,
+      			right: 0,
+      			bottom: 0,
+      			backgroundColor: 'rgba(0, 0, 0, 0.5)'
+    		},
+    			content: {
+      			position: 'absolute',
+      			top: 'auto',
+      			marginLeft: '20%',
+      			marginRight: '20%',
+      			bottom: '200px',
+      			border: '1px solid #ccc',
+      			background: '#000',
+      			overflow: 'auto',
+      			WebkitOverflowScrolling: 'touch',
+      			borderRadius: '10px',
+      			outline: 'none',
+      			padding: '20px'
+    		}
+  		}}>
 		<form 
 			onSubmit={(event) => {
 				event.preventDefault()
@@ -72,8 +99,10 @@ class AddItem extends React.Component {
 				<br />
 				<textarea type="text" name="itemDescription" validate={[required, nonEmpty]} />
 				<br />
+				<div className="buttons">
 				<button className="form">Submit</button>
 				<button onClick={this.handleCloseModal} className="form">Cancel</button>
+				</div>
 			</form>
 			</ReactModal>
 			</div>

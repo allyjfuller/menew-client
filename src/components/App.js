@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import HeaderBar from './header-bar';
 import AddItem from './add-item';
 //import SearchItem from './search-item';
 import { refreshAuthToken } from '../actions/auth';
 import Dashboard from './dashboard';
+import './App.css';
 
 export class App extends React.Component {
     componentDidUpdate(prevProps) {
@@ -41,7 +41,6 @@ export class App extends React.Component {
             return (
                 this.props.loggedIn ?
             <div className="app" >
-                <HeaderBar />
                 <AddItem />
                 <Dashboard />
             </div>
