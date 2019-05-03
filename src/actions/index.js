@@ -45,6 +45,17 @@ export const getItems = (email) => {
 	}
 }
 
+export const getAllItems = (item) => {
+	return dispatch => {
+		fetch(`${API_BASE_URL}/items/`, {
+			method: 'GET',
+		})
+		.then(response => response.json())
+		.then(json => dispatch(receiveItems(json)))
+		.catch(err => console.log(err))
+	}
+}
+
 export const deleteItem = (_id) => {
 	return dispatch => {
 		fetch(`${API_BASE_URL}/item/${_id}`, {
