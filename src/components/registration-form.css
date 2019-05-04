@@ -32,8 +32,10 @@ a {
 }
 
 input#passwordConfirm,
-input#establishmentName {
+input#establishmentName,
+input#passwordConfirm {
 	background-color: #000;
+	color: #fff;
 	border-left: 0px;
 	border-right: 0px;
 	border-top: 0px;

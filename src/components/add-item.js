@@ -48,8 +48,8 @@ class AddItem extends React.Component {
     			content: {
       			position: 'absolute',
       			top: 'auto',
-      			marginLeft: '20%',
-      			marginRight: '20%',
+      			marginLeft: '5px',
+      			marginRight: '5px',
       			bottom: '200px',
       			border: '1px solid #ccc',
       			background: '#000',
@@ -68,7 +68,8 @@ class AddItem extends React.Component {
 					name: event.target.itemName.value,
 					price: event.target.itemPrice.value,
 					description: event.target.itemDescription.value, 
-					userEmail: this.props.currentUser.email
+					userEmail: this.props.currentUser.email,
+					establishmentName: this.props.currentUser.establishmentName
 			}
 
 				this.props.dispatch(saveItem(input))

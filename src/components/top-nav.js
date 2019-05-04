@@ -17,13 +17,8 @@ export class TopNav extends React.Component {
 	}
 	
 render() {
-	// Only render login button if we are logged out
-	let logInButton;
-	if (this.props.loggedOut) {
-		logInButton = (<button onClick={() => this.logIn()}>LOG IN</button>);
-		
-	}
 	return (
+
 
 <Router>
 		<nav>
@@ -33,7 +28,7 @@ render() {
 				<Link to="/about" className="about">WHO WE ARE</Link>
 				</li>
 				<li>
-				<Link to="/login">{logInButton}</Link>
+				<Link to="/login" className="login">LOG IN</Link>
 				</li>
 				<li>
 				<Link to="/register" className="register">REGISTER</Link>

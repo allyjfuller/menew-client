@@ -7,7 +7,7 @@ import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import store from './store'
 import './index.css';
-//import FeedList from './components/item-feed/feed-list';
+
 
 ReactDOM.render(
 

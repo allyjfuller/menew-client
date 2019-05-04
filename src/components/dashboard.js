@@ -3,14 +3,17 @@ import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
 import { BrowserRouter as Router } from "react-router-dom"
 import {fetchProtectedData} from '../actions/protected-data';
+import {getAllItems} from '../actions/index';
 import ItemList from './item-list';
 import SearchItem from './search-item';
+import AddItem from './add-item';
 
 import './dashboard.css';
 
-export class Dashboard extends React.Component {
+export class Dash extends React.Component {
     componentDidMount() {
         this.props.dispatch(fetchProtectedData());
+        this.props.dispatch(getAllItems());
     }
 
     render() {
@@ -18,11 +21,8 @@ export class Dashboard extends React.Component {
         return (
             <Router>
                 <div className="dashboard">
-                <SearchItem />
-                {
-                    //<ItemList items={this.props.items}/>
-                }
-                <FeedList />
+                <ItemList items={this.props.items} />
+                
                 </div>
             </Router>
         );
@@ -32,8 +32,9 @@ export class Dashboard extends React.Component {
 const mapStateToProps = state => { 
     console.log(state)
     return {
-    items: state.protectedData.data
+    items: state.protectedData.data,
+    publicItems: state.items.data
     }
 };
 
-export default requiresLogin()(connect(mapStateToProps)(Dashboard));
+export default requiresLogin()(connect(mapStateToProps)(Dash));
