@@ -1,4 +1,3 @@
-/*
 import {
     SEARCH_ITEMS_REQUEST,
     SEARCH_ITEMS_SUCCESS,
@@ -33,4 +32,4 @@ export default function searchItems(state = initialState, action) {
 	}
 	return state;
 }
-*/
+

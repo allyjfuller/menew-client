@@ -18,6 +18,23 @@ export const RECEIVE_ITEMS = 'RECEIVE_ITEMS'
 	items
 })
 
+export const SEARCH_ITEMS_REQUEST = 'SEARCH_ITEMS_REQUEST';
+export const searchItemsRequest = () => ({
+	type: SEARCH_ITEMS_REQUEST
+});
+
+export const SEARCH_ITEMS_SUCCESS = 'SEARCH_ITEMS_SUCCESS';
+export const searchItemsSuccess = (items) => ({
+    type: SEARCH_ITEMS_SUCCESS,
+    items
+});
+
+export const SEARCH_ITEMS_ERROR = 'SEARCH_ITEMS_ERROR';
+export const searchItemsError = (error) => ({
+    type: SEARCH_ITEMS_ERROR,
+    error
+});
+
 export const saveItem = (item) => {
 	console.log(item);
 	return dispatch => {
@@ -47,7 +64,7 @@ export const getItems = (email) => {
 
 export const getAllItems = (item) => {
 	return dispatch => {
-		fetch(`${API_BASE_URL}/items/`, {
+		fetch(`${API_BASE_URL}/item/`, {
 			method: 'GET',
 		})
 		.then(response => response.json())
@@ -66,3 +83,14 @@ export const deleteItem = (_id) => {
 		.catch(err => console.log(err))
 	}
 }
+
+export const searchItems = (itemName) => {
+    return dispatch => {
+    	fetch(`${API_BASE_URL}/item/find/${itemName}`, {
+			method: 'GET'
+		})
+		.then(response => response.json())
+		.then(json => dispatch(receiveItems(json)))
+		.catch(err => console.log(err))
+    }
+};

@@ -1,8 +1,8 @@
-/*
 import React from 'react';
 import { connect } from 'react-redux';
 import Spinner from 'react-spinkit';
 import { searchItems } from '../actions/index';
+import './search-item.css';
 
 export class SearchItem extends React.Component {
 	renderResults() {
@@ -14,9 +14,24 @@ export class SearchItem extends React.Component {
 			return <strong>{this.props.error}</strong>;
 		}
 
+		if (this.props.data) {
 		const items = this.props.items.map((item, index) =>
-			<li key={index}>{item}</li>
-		);
+			<li key={index}>
+			<span>
+			{item.name}
+			<br />
+			{item.price}
+			<br />
+			{item.description}
+			</span>
+			</li>
+		)
+
+		return (
+			<ul className="item-search-results">
+                {items}
+            </ul>
+		)};
 	}
 
 	search(e) {
@@ -32,9 +47,12 @@ export class SearchItem extends React.Component {
 		return (
 			<div className="item-search">
 				<form onSubmit={(e) => this.search(e)}>
-					<input type="search" ref={input => this.input = input} />
-					<button>Search</button>
+					<input type="search" className="search" ref={input => this.input = input} />
+					<button className="search">Search</button>
 				</form>
+				<ul className="item-search-results">
+                    {this.renderResults()}
+                </ul>
 			</div>
 		);
 	}
@@ -48,4 +66,3 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(SearchItem);
-*/

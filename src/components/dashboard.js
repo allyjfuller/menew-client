@@ -4,6 +4,7 @@ import requiresLogin from './requires-login';
 import { BrowserRouter as Router } from "react-router-dom"
 import {fetchProtectedData} from '../actions/protected-data';
 import ItemList from './item-list';
+import SearchItem from './search-item';
 
 import './dashboard.css';
 
@@ -17,7 +18,11 @@ export class Dashboard extends React.Component {
         return (
             <Router>
                 <div className="dashboard">
-                <ItemList items={this.props.items}/>
+                <SearchItem />
+                {
+                    //<ItemList items={this.props.items}/>
+                }
+                <FeedList />
                 </div>
             </Router>
         );
