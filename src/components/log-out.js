@@ -17,12 +17,22 @@ export class LogOut extends React.Component {
         let logOutButton;
         if (this.props.loggedIn) {
             logOutButton = (
-                <button className="log-out" onClick={() => this.logOut()}>LOG OUT</button>
+                    <ul>
+                    <li>
+                    <button className="log-out">ABOUT</button>
+                    </li>
+                    <li>
+                    <button className="log-out">CONTACT</button>
+                    </li>
+                    <li>
+                    <button className="log-out" onClick={() => this.logOut()}>LOG OUT</button>
+                    </li>
+                    </ul>
             );
         }
         return (
             <div>
-                <Link to="/login">{logOutButton}</Link>
+                <Link to="/">{logOutButton}</Link>
             </div>
         );
     }

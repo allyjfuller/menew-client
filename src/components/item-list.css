@@ -2,3 +2,65 @@ div.item-list-container {
 	display: block;
 	text-align: left;
 }
+
+ul.item-list {
+	display: block;
+	text-align: left;
+	margin-left: 5px;
+}
+
+li.items {
+	padding: 5px;
+	margin-left: 8px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
+li.items:last-child {
+    border-right: 1px solid #fff;
+}
+
+span.item-details {
+	font-family: 'Muli', sans-serif;
+	margin-bottom: 5px;
+}
+
+p#public {
+
+	margin: 2px;
+	padding-right: 20px;
+	padding-left: 5px;
+	line-height: 0.5px;
+	
+}
+
+.establishmentName {
+	font-size: 14px;
+	font-style: italic;
+	padding-top: 10px;
+}
+.itemName {
+	font-size: 28px;
+
+}
+
+.description {
+	font-style: italic;
+}
+
+
+
+button.delete {
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+	width: 100%;
+	color: #fff;
+	border-radius: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: rgba( 225, 225, 225, 0.25);
+	margin-top: 8px;
+
+}

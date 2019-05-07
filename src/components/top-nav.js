@@ -17,25 +17,32 @@ export class TopNav extends React.Component {
 	}
 	
 render() {
+	console.log(this.props);
 	return (
 
 
 <Router>
 		<nav>
 		<Link to="/" className="logo"><img src={ logoWhite } alt="Logo" className="logo" /></Link>
-			<ul>
-				<li>
-				<Link to="/about" className="about">WHO WE ARE</Link>
-				</li>
-				<li>
-				<Link to="/login" className="login">LOG IN</Link>
-				</li>
-				<li>
-				<Link to="/register" className="register">REGISTER</Link>
-				</li>
-				<li>
-				<Link to="/contact" className="contact">CONTACT</Link>
-				</li>
+			<ul className="nav">
+				{!this.props.loggedIn ? 
+					<div>
+					<li>
+					<Link to="/about" className="about">ABOUT</Link>
+					</li>
+					<li>
+					<Link to="/login" className="login">LOG IN</Link>
+					</li>
+					<li>
+					<Link to="/register" className="register">REGISTER</Link>
+					</li>
+					<li>
+					<Link to="/contact" className="contact">CONTACT</Link>
+					</li>
+					</div>
+					:
+					null
+				}
 				<li>
 				<LogOut />
 				</li>

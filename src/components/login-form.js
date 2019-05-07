@@ -3,6 +3,7 @@ import {Field, reduxForm, focus} from 'redux-form';
 import Input from './input';
 import {login} from '../actions/auth';
 import ReactModal from 'react-modal';
+import { Link } from 'react-router-dom';
 import './login-form.css';
 
 import {required, nonEmpty} from '../validators';
@@ -96,7 +97,7 @@ export class LoginForm extends React.Component {
                 <button className="form-2" disabled={this.props.pristine || this.props.submitting}>
                     Log in
                 </button>
-                <button onClick={this.handleCloseModal} className="form-2">Cancel</button>
+                <Link to="/"><button onClick={this.handleCloseModal} className="form-2">Cancel</button></Link>
                 </div>
             </form>
             </ReactModal>

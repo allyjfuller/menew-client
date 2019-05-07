@@ -16,8 +16,7 @@ export const fetchProtectedDataError = error => ({
 export const fetchProtectedData = () => (dispatch, getState) => {
     const authToken = getState().auth.authToken; 
     const email = getState().auth.currentUser.email;
-    const establishmentName = getState().auth.currentUser.establishmentName;
-    console.log(email, establishmentName, authToken)
+    console.log(email, authToken)
     return fetch(`${API_BASE_URL}/item/${email}`, {
         method: 'GET',
         headers: {

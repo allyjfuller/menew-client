@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import RegistrationForm from './registration-form';
+import LandingPage from './landing-page';
 import { Redirect } from 'react-router-dom';
 
 export function RegistrationPage(props) {
@@ -12,6 +13,7 @@ export function RegistrationPage(props) {
     return (
         <div>
             <RegistrationForm />
+            <LandingPage />
         </div>
     );
 }

@@ -31,6 +31,7 @@ export class RegistrationForm extends React.Component {
     }
 
         componentWillMount() {
+            console.log('testing!');
         ReactModal.setAppElement('body')
     }
 
@@ -125,7 +126,7 @@ export class RegistrationForm extends React.Component {
                     disabled={this.props.pristine || this.props.submitting}>
                     REGISTER
                 </button>
-                <button onClick={this.handleCloseModal} className="reg-button">CANCEL</button>
+                <Link to="/"><button className="reg-button">CANCEL</button></Link>
                 </div>
             </form>
             </ReactModal>

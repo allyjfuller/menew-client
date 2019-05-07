@@ -2,15 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import SearchItem from './search-item';
-import {fetchProtectedData} from '../actions/protected-data';
 import {getAllItems} from '../actions/index';
 import ItemList from './item-list';
+import './landing-page.css';
 
 
 export class LandingPage extends React.Component {
-    constructor(props) {
-        super();
-    }
     
     componentDidMount() {
         this.props.dispatch(getAllItems());
@@ -25,7 +22,7 @@ export class LandingPage extends React.Component {
         <div className="home">
         <div>
         <SearchItem />
-        <ItemList items={this.props.publicItems} />
+        <ItemList items={this.props.publicItems} showDeleteButton={false}/>
         </div>
         </div>
     
