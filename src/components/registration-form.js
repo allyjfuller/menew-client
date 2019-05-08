@@ -31,7 +31,6 @@ export class RegistrationForm extends React.Component {
     }
 
         componentWillMount() {
-            console.log('testing!');
         ReactModal.setAppElement('body')
     }
 

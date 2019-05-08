@@ -15,7 +15,6 @@ export class Dashboard extends React.Component {
     }
 
     render() {
-    console.log(this.props)
         return (
             <Router>
                 <div className="dashboard">
@@ -28,7 +27,6 @@ export class Dashboard extends React.Component {
 }
 
 const mapStateToProps = state => { 
-    console.log(state)
     return {
     items: state.protectedData.data,
     publicItems: state.items.data

@@ -12,7 +12,6 @@ const items = (state = initialState, action) => {
 
 		case 'DELETE_ITEM':
 		const data = state.data.filter(item => item._id !== action.id)
-		console.log(data)
 			return {
 				...state,
 				data: data

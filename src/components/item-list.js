@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import './item-list.css'
 
 const ItemList = (props) => {
-	console.log(props) 
+	
 
 return (
 		<div className="item-list-container">

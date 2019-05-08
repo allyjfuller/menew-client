@@ -36,7 +36,6 @@ export const searchItemsError = (error) => ({
 });
 
 export const saveItem = (item) => {
-	console.log(item);
 	return dispatch => {
 		fetch(`${API_BASE_URL}/item/`, {
 			method: 'POST',
