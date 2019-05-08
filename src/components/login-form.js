@@ -58,8 +58,8 @@ export class LoginForm extends React.Component {
                 content: {
                 position: 'absolute',
                 top: 'auto',
-                marginLeft: '100px',
-                marginRight: '100px',
+                marginLeft: '250px',
+                marginRight: '250px',
                 bottom: '200px',
                 border: '1px solid #ccc',
                 background: '#000',
