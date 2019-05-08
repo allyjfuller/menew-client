@@ -1,3 +1,14 @@
+Live App:
+
+https://obscure-temple-11169.herokuapp.com/
+
+Server Repo:
+
+https://github.com/allyjfuller/menew-server
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
