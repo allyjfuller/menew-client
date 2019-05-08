@@ -60,8 +60,8 @@ export class RegistrationForm extends React.Component {
                 content: {
                 position: 'absolute',
                 top: '20%',
-                marginLeft: '5px',
-                marginRight: '5px',
+                marginLeft: '350px',
+                marginRight: '350px',
                 bottom: 'auto',
                 border: '1px solid #ccc',
                 background: '#000',
