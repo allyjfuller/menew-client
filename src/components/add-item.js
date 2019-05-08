@@ -48,8 +48,8 @@ class AddItem extends React.Component {
     			content: {
       			position: 'absolute',
       			top: 'auto',
-      			marginLeft: '425px',
-      			marginRight: '425px',
+      			marginLeft: '400px',
+      			marginRight: '400px',
       			bottom: '200px',
       			border: '1px solid #ccc',
       			background: '#000',
