@@ -1,0 +1,10 @@
+div.about-menew {
+	text-align: center;
+	margin: 20px 150px;
+	float: center;
+	font-family: 'Muli', sans-serif;
+}
+
+p.about-content {
+	font-size: 18px;
+}

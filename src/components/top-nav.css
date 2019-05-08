@@ -11,7 +11,9 @@ ul.nav {
 
   	list-style-type: none;
   	overflow: hidden;
-  	text-align: center;
+  	float: center;
+  	margin-left: 450px;
+  	display: inline-block;
   
 }
 
