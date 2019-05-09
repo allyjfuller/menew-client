@@ -22,3 +22,22 @@ Bars and restaurants can register and sign in to post their new menu items:
 
 <img width="1272" alt="Screen Shot 2019-05-09 at 12 19 38 AM" src="https://user-images.githubusercontent.com/39098059/57427261-2860cb80-71f1-11e9-9949-c528ce8ea2a9.png">
 
+**Tech Stack**
+
+Front-End
+- React
+- CSS
+- JavaScript
+- jQuery
+
+
+Back-end
+- Node.js
+- Express.js
+- Mongoose
+- MongoDB
+
+Deployment, Version Control and Cloud Hosting
+- Github
+- Heroku
+- Atlas
