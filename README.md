@@ -18,3 +18,7 @@ Search for exactly what you are craving:
 
 <img width="1017" alt="Screen Shot 2019-05-09 at 12 17 32 AM" src="https://user-images.githubusercontent.com/39098059/57427190-e172d600-71f0-11e9-8296-ef1a05ef5458.png">
 
+Bars and restaurants can register and sign in to post their new menu items:
+
+<img width="1272" alt="Screen Shot 2019-05-09 at 12 19 38 AM" src="https://user-images.githubusercontent.com/39098059/57427261-2860cb80-71f1-11e9-9949-c528ce8ea2a9.png">
+
