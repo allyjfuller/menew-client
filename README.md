@@ -26,6 +26,8 @@ Search something you are craving, to see if there are any new updates:
 
 <img width="1158" alt="Screen Shot 2019-05-18 at 9 29 59 AM" src="https://user-images.githubusercontent.com/39098059/57966228-b22a3a80-794f-11e9-938f-19bd2d44e96e.png">
 
+
+
 Step 1: Resgister your bar or restaurant
 
 <img width="1167" alt="Screen Shot 2019-05-18 at 9 44 52 AM" src="https://user-images.githubusercontent.com/39098059/57966407-c0795600-7951-11e9-93cb-0cc9887f96fa.png">
