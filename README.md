@@ -29,6 +29,11 @@ Search something you are craving, to see if there are any new updates:
 Step 1: Resgister your bar or restaurant
 
 
+Step 2: Add or delete your menu items from your dashboard
+
+
+Step 3: Log out to see the public view with your new menu items!
+
 
 **Tech Stack**
 
