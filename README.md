@@ -34,9 +34,9 @@ Step 1: Resgister your bar or restaurant
 
 Step 2: Add or delete your menu items from your dashboard
 
-<img width="1151" alt="Screen Shot 2019-05-18 at 9 38 11 AM" src="https://user-images.githubusercontent.com/39098059/57966408-c111ec80-7951-11e9-85b5-2ae250bf1e23.png">
-
 <img width="1116" alt="Screen Shot 2019-05-18 at 9 35 30 AM" src="https://user-images.githubusercontent.com/39098059/57966409-c111ec80-7951-11e9-9b3d-09773968b42e.png">
+
+<img width="1151" alt="Screen Shot 2019-05-18 at 9 38 11 AM" src="https://user-images.githubusercontent.com/39098059/57966408-c111ec80-7951-11e9-85b5-2ae250bf1e23.png">
 
 Step 3: Log out to see the public view with your new menu items!
 
