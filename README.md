@@ -18,7 +18,7 @@ About Menew:
 
 See all recent menu updates from your favorite spots:
 
-
+<img width="1312" alt="Screen Shot 2019-05-18 at 9 27 31 AM" src="https://user-images.githubusercontent.com/39098059/57966195-45af3b80-794f-11e9-9c87-4ca222a829f0.png">
 
 Search something you are craving, to see if there are any new updates:
 
