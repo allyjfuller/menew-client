@@ -26,11 +26,11 @@ Search something you are craving, to see if there are any new updates:
 
 <img width="1158" alt="Screen Shot 2019-05-18 at 9 29 59 AM" src="https://user-images.githubusercontent.com/39098059/57966228-b22a3a80-794f-11e9-938f-19bd2d44e96e.png">
 
-
+### _BAR & RESTAURANT USE CASE_
 
 Step 1: Resgister your bar or restaurant
 
-<img width="1167" alt="Screen Shot 2019-05-18 at 9 44 52 AM" src="https://user-images.githubusercontent.com/39098059/57966407-c0795600-7951-11e9-93cb-0cc9887f96fa.png">
+<img width="660" alt="Screen Shot 2019-05-18 at 9 33 50 AM" src="https://user-images.githubusercontent.com/39098059/57966410-c111ec80-7951-11e9-9027-dc0b84dd654f.png">
 
 Step 2: Add or delete your menu items from your dashboard
 
@@ -40,7 +40,7 @@ Step 2: Add or delete your menu items from your dashboard
 
 Step 3: Log out to see the public view with your new menu items!
 
-<img width="660" alt="Screen Shot 2019-05-18 at 9 33 50 AM" src="https://user-images.githubusercontent.com/39098059/57966410-c111ec80-7951-11e9-9027-dc0b84dd654f.png">
+<img width="1167" alt="Screen Shot 2019-05-18 at 9 44 52 AM" src="https://user-images.githubusercontent.com/39098059/57966407-c0795600-7951-11e9-93cb-0cc9887f96fa.png">
 
 **Tech Stack**
 
