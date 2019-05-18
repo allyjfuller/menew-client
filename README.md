@@ -22,7 +22,9 @@ See all recent menu updates from your favorite spots:
 
 Search something you are craving, to see if there are any new updates:
 
+<img width="1119" alt="Screen Shot 2019-05-18 at 9 29 37 AM" src="https://user-images.githubusercontent.com/39098059/57966226-afc7e080-794f-11e9-987a-9580e323a6e9.png">
 
+<img width="1158" alt="Screen Shot 2019-05-18 at 9 29 59 AM" src="https://user-images.githubusercontent.com/39098059/57966228-b22a3a80-794f-11e9-938f-19bd2d44e96e.png">
 
 Step 1: Resgister your bar or restaurant
 
