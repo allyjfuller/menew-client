@@ -28,12 +28,17 @@ Search something you are craving, to see if there are any new updates:
 
 Step 1: Resgister your bar or restaurant
 
+<img width="1167" alt="Screen Shot 2019-05-18 at 9 44 52 AM" src="https://user-images.githubusercontent.com/39098059/57966407-c0795600-7951-11e9-93cb-0cc9887f96fa.png">
 
 Step 2: Add or delete your menu items from your dashboard
 
+<img width="1151" alt="Screen Shot 2019-05-18 at 9 38 11 AM" src="https://user-images.githubusercontent.com/39098059/57966408-c111ec80-7951-11e9-85b5-2ae250bf1e23.png">
+
+<img width="1116" alt="Screen Shot 2019-05-18 at 9 35 30 AM" src="https://user-images.githubusercontent.com/39098059/57966409-c111ec80-7951-11e9-9b3d-09773968b42e.png">
 
 Step 3: Log out to see the public view with your new menu items!
 
+<img width="660" alt="Screen Shot 2019-05-18 at 9 33 50 AM" src="https://user-images.githubusercontent.com/39098059/57966410-c111ec80-7951-11e9-9027-dc0b84dd654f.png">
 
 **Tech Stack**
 
